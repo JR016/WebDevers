@@ -1,0 +1,322 @@
+                            /*Font Imports*/
+                            
+                            @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,500&display=swap');
+                            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+                            /*Base Styling*/
+                            
+                            * {
+                                -webkit-box-sizing: border-box;
+                                -moz-box-sizing: border-box;
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                background-image: radial-gradient(rgb(100, 193, 255) 25%, rgb(30, 166, 255));
+                            }
+                            
+                            header,
+                            section {
+                                border-radius: 30px;
+                                background-color: rgb(245, 245, 220);
+                            }
+                            
+                            li {
+                                list-style-type: none;
+                            }
+                            
+                            a {
+                                font-family: 'Bodoni Moda', serif;
+                                color: rgb(39, 38, 51);
+                                text-decoration: none;
+                            }
+                            
+                            a:active {
+                                color: rgb(200, 60, 60);
+                                font-size: 150%;
+                            }
+                            
+                            section {
+                                text-transform: capitalize;
+                            }
+                            
+                            section,
+                            input {
+                                font-family: 'Cormorant Garamond', serif
+                            }
+                            
+                            label {
+                                font-weight: bold;
+                            }
+                            
+                            header {
+                                border: 15px solid rgb(13, 66, 239);
+                            }
+                            
+                            #summary {
+                                border: 15px solid rgb(238, 111, 4);
+                            }
+                            
+                            #tutorials {
+                                border: 15px solid rgb(178, 34, 34);
+                            }
+                            
+                            #courses {
+                                border: 15px solid rgb(9, 150, 9);
+                            }
+                            /*Mobile Devices Styling*/
+                            
+                            @media screen and (min-width: 320px) and (max-width: 479px) {
+                                #header,
+                                section {
+                                    margin: 6%;
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    align-items: center;
+                                }
+                                #header-img {
+                                    width: 75%;
+                                    margin-top: 30px;
+                                    margin-bottom: 20px;
+                                    background-color: rgb(40, 40, 40);
+                                    border-radius: 100%;
+                                }
+                                .nav-link {
+                                    text-align: center;
+                                    margin-bottom: 20px;
+                                }
+                                section {
+                                    margin-top: 40px;
+                                    margin-bottom: 40px;
+                                }
+                                h1 {
+                                    text-align: center;
+                                    font-size: 120%;
+                                    margin: 30px;
+                                }
+                                form {
+                                    text-align: center;
+                                }
+                                label {
+                                    font-size: 120%;
+                                }
+                                label::after {
+                                    content: "\A";
+                                    white-space: pre;
+                                }
+                                input[type="email"] {
+                                    margin: 35px;
+                                    font-size: 110%;
+                                }
+                                input[type="submit"] {
+                                    font-size: 110%;
+                                    margin-bottom: 20px;
+                                }
+                                iframe {
+                                    width: 100%;
+                                    height: 250px;
+                                    padding: 13%;
+                                    border-radius: 80px;
+                                }
+                                h2 {
+                                    margin-top: 30px;
+                                    margin-bottom: 30px;
+                                }
+                                ul {
+                                    margin-right: 30px;
+                                    text-align: center;
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                }
+                                .tutorial-link {
+                                    list-style-type: none;
+                                    margin-bottom: 20px;
+                                }
+                                .tutorial-link a {
+                                    font-size: 115%;
+                                    margin: 150px;
+                                }
+                                .tutorial-link img {
+                                    width: 20%;
+                                    margin-top: 20px;
+                                }
+                                .last-link {
+                                    margin-bottom: -5px;
+                                }
+                                .tutorial-link p {
+                                    font-size: 110%;
+                                }
+                            }
+                            /*Tablets Devices Styling*/
+                            
+                            @media screen and (min-width: 480px) and (max-width: 759px) {
+                                main {
+                                    padding: 30px;
+                                }
+                                header {
+                                    margin-top: 3%;
+                                }
+                                nav {
+                                    margin-left: 1.5rem;
+                                }
+                                section {
+                                    padding-top: 1px;
+                                }
+                                #summary {
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    justify-content: space-between;
+                                }
+                                header,
+                                section {
+                                    margin-bottom: 5%;
+                                    text-align: center;
+                                    font-size: 120%;
+                                    padding-bottom: 20px;
+                                    margin: 30px;
+                                }
+                                #header-img {
+                                    margin: 30px;
+                                    width: 250px;
+                                    background-color: rgb(40, 40, 40);
+                                    border-radius: 100%;
+                                }
+                                h1 {
+                                    font-size: 130%;
+                                    margin: 3%;
+                                }
+                                iframe {
+                                    width: 100%;
+                                    height: 450px;
+                                    padding: 11%;
+                                    border-radius: 120px;
+                                }
+                                label::after {
+                                    content: "\A\A";
+                                    white-space: pre;
+                                }
+                                label,
+                                input {
+                                    font-size: 110%
+                                }
+                                #email {
+                                    margin-right: 3%;
+                                }
+                                ul,
+                                li {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    margin-right: 1rem;
+                                    margin-top: 10px;
+                                }
+                                #html-img,
+                                #css-img,
+                                #js-img {
+                                    width: 80px;
+                                }
+                                #angular-img,
+                                #bootstrap-img,
+                                #react-img,
+                                #vue-img {
+                                    width: 100px;
+                                }
+                                section img {
+                                    margin-top: 10px;
+                                }
+                            }
+                            /*Desktop Devices Styling*/
+                            
+                            @media screen and (min-width:760px) {
+                                main {
+                                    margin: 50px;
+                                }
+                                header {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    align-items: center;
+                                    margin-bottom: 40px;
+                                }
+                                nav {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    font-size: 150%;
+                                    margin-bottom: 20px;
+                                }
+                                section {
+                                    margin-bottom: 40px;
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    align-items: center;
+                                }
+                                #header-img {
+                                    width: 350px;
+                                    background-color: rgb(40, 40, 40);
+                                    border-radius: 100%;
+                                    margin-top: 20px;
+                                    margin-bottom: 20px;
+                                    margin-left: 1.2rem;
+                                }
+                                #html-img,
+                                #css-img,
+                                #js-img {
+                                    width: 80px;
+                                }
+                                #angular-img,
+                                #bootstrap-img,
+                                #react-img,
+                                #vue-img {
+                                    width: 100px;
+                                }
+                                #summary h1 {
+                                    font-size: 180%;
+                                }
+                                iframe {
+                                    width: 60%;
+                                    margin-bottom: 40px;
+                                    border-radius: 20%;
+                                    height: 250px;
+                                }
+                                form {
+                                    margin-bottom: 20px;
+                                }
+                                label,
+                                input {
+                                    font-size: 140%;
+                                    margin-right: 30px;
+                                }
+                                label::after {
+                                    content: ":";
+                                }
+                                h2 {
+                                    font-size: 160%;
+                                }
+                                ul {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    justify-content: space-around;
+                                    margin-right: 2.2rem;
+                                }
+                                .tutorial-link {
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    align-items: center;
+                                }
+                                .tutorial-link a {
+                                    margin-bottom: 13px;
+                                }
+                                #angular-price {
+                                    margin-top: 30px;
+                                }
+                                #bootstrap-price {
+                                    margin-top: 73px;
+                                }
+                                #react-price {
+                                    margin-top: 30px;
+                                }
+                                #vue-price {
+                                    margin-top: 43px;
+                                }
+                            }
